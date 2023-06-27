@@ -4,7 +4,7 @@ exports.main = async (event, callback) => {
 // Set up the HubSpot client using the access token from the environment variables
 const hubspotClient = new hubspot.Client({
   numberOfApiCallRetries: 3,
-  accessToken: process.env.YOUR_SECRET_HERE
+  accessToken: process.env.association_label
 });
 
  //Get objectId from inputfields & define association request
